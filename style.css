@@ -9,53 +9,78 @@ html, body {
 
 .logo{
   text-align: center;
-  background-color: rgb(49, 109, 179);
+  background-color: rgba(0, 0, 0, 0.87);
   color: white;
   padding: 0.5em;
 }
 
 #character-bar {
   height: 15vh;
-  background: rgb(49, 109, 179);
+  background: rgba(0, 0, 0, 0.87);
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding-bottom: 3vh;
+  gap: 15px;
+  padding: 1em;
 }
 
 #character-bar span {
-  padding: 1%;
-  height: 80%;
-  width: 8vw;
-  display: flex;
-  justify-content: center;
-  font-size: 3vh;
-  align-items: center;
-  border-radius: 2em;
-  border: 1px solid white;
+  padding: 1em;
+  cursor: pointer;
+  font-size: 1.2em;
+  border-radius: 20px;
+  border: 2px solid white;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: all 0.3s;
+}
+#character-bar span:hover {
+  scale: 1.05;
 }
 
 .characterInfo{
-  height: 550px;
-  padding: 30px;
-  font-size: 24px;
-  border: dotted;
+  max-width: 600px;
+  margin: 30px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
-
+form {
+  margin-top: 10px;
+}
 input[type="submit"], button {
   background-color: rgb(49, 109, 179);
   color: white;
   font-size: 18px;
+  padding: 8px 16px;
+  border: none;
   border-radius: 6px;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
+  transition: all .3s;
+}
+input[type="submit"]:hover, button:hover {
+  background-color: rgb(35, 85, 140);
 }
 
 input[type="text"] {
-  font-size: 3vh;
+  font-size: 1em;
+  padding: 8px;
+  width: 80%;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 10px;
 }
 
 #image{
   width: 300px;
   height: 300px;
+}
+#reset-btn{
+  background-color: rgba(255, 0, 0, 0.856);
+  transition: all .3s;
+}
+#reset-btn:hover{
+  background-color: rgb(161, 10, 10);
 }
